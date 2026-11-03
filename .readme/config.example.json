@@ -1,0 +1,40 @@
+{
+  "url": "http://localhost:3000",
+  "outDir": "docs",
+  "headerOffset": 80,
+  "desktop": { "width": 1440, "height": 900 },
+  "hero": { "name": "apercu-hero", "width": 1600, "wait": 3500 },
+  "sections": [
+    { "selector": "#salon", "name": "apercu-salon", "offset": 0, "wait": 3000 },
+    { "selector": "#tarifs", "name": "apercu-tarifs" },
+    { "selector": "#avis", "name": "apercu-avis" },
+    { "selector": "#acces", "name": "apercu-acces", "wait": 3500 },
+    { "selector": "footer", "name": "apercu-pied", "offset": -300, "width": 1600 }
+  ],
+  "mobile": {
+    "name": "apercu-mobile",
+    "background": "#dfe8e1",
+    "screens": [
+      { "wait": 3500 },
+      { "click": "button[aria-label='Menu principal']", "wait": 1000 },
+      { "selector": "#tarifs" }
+    ]
+  },
+  "palette": {
+    "css": "src/app/globals.css",
+    "out": "docs/palette.svg",
+    "background": "#f5f3ee",
+    "border": "#d9d4c8",
+    "text": "#1f2a24",
+    "muted": "#56615a",
+    "serif": "'Cormorant Garamond', Garamond, Georgia, serif",
+    "sans": "Figtree, 'Segoe UI', system-ui, sans-serif",
+    "colors": [
+      { "name": "Crème", "var": "--surface" },
+      { "name": "Papier", "var": "--surface-raised" },
+      { "name": "Vert salon", "var": "--brand" },
+      { "name": "Laiton", "var": "--brass" },
+      { "name": "Encre", "var": "--ink" }
+    ]
+  }
+}
